@@ -1,4 +1,5 @@
 import pandas as pd
+from pandas.core.common import random_state
 from sklearn.model_selection import train_test_split
 from sklearn.preprocessing import LabelEncoder
 from transformers import BertTokenizer, BertForSequenceClassification
@@ -76,6 +77,7 @@ training_args = TrainingArguments(
     logging_dir='./logs',
     logging_steps=10,
     eval_strategy="epoch",
+    save_strategy='no',
 )
 
 # 9. 创建Trainer
