@@ -1,1 +1,0 @@
-Group3a所有搜集的pdf已经全部转换成txt格式，位于extracted_text文件夹内，无需再上传pdf
