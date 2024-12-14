@@ -44,7 +44,7 @@ def analyze_text_file_with_lda(text):
 
 # Function to analyze text file using different methods and return results
 def analyze_text_file(filename):
-    path = os.path.join(os.getcwd(), filename)
+    path = os.path.join('extracted_text', filename)
     print("Analyzing file:", filename)
     
     with open(path, 'r', encoding='utf-8') as file:
