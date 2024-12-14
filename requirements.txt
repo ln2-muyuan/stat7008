@@ -3,3 +3,6 @@ openpyxl
 nltk
 plotly
 textblob
+spacy
+textblob
+gensim
