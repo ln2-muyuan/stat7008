@@ -59,14 +59,14 @@ class ChatBot:
         print("Chatbot: What do you want to do with this PDF?")
         print("※ 1. Find keywords of ESG report")
         print("※ 2. Topic classifications")
-        print("※ 3. Sentiment analysis")
+        print("※ 3. All text sentiment analysis")
         print("※ 4. Data mining and/or text analysis methods")
-        print("※ 6. Back to the main menu")
+        print("※ 5. Back to the main menu")
         try:
             choice = int(input("Chatbot: Your function choice (1/2/3/4/5): "))
             if choice == 1:
-                analyze_text_file(selected_pdf)
                 print("Chatbot: Analysis completed. Close the picture and wait around 10 seconds to continue.")
+                analyze_text_file(selected_pdf)
             elif choice == 2:
                 print("Chatbot: The topic is", get_topic_by_filename(selected_pdf))
             elif choice == 3:
@@ -74,10 +74,10 @@ class ChatBot:
                 run_sentiment_analysis()
             elif choice == 4:
                 function4()
-            elif choice == 6:
+            elif choice == 5:
                 print("Chatbot: Returning to the main menu...")
             else:
-                print("Chatbot: Invalid choice! Please select 1, 2, 3, 4, 5, 6.")
+                print("Chatbot: Invalid choice! Please select 1, 2, 3, 4, 5.")
         except ValueError:
             print("Chatbot: Invalid input! Please enter a valid number.")
 

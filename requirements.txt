@@ -6,3 +6,8 @@ textblob
 spacy
 textblob
 gensim
+requests
+scikit-learn
+mitplotlib
+pandas
+seaborn
